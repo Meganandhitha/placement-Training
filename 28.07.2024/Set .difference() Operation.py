@@ -1,0 +1,6 @@
+n = int(input().strip())
+english_subscribers = set(map(int, input().split()))
+m = int(input().strip())
+french_subscribers = set(map(int, input().split()))
+only_english = english_subscribers.difference(french_subscribers)
+print(len(only_english))
