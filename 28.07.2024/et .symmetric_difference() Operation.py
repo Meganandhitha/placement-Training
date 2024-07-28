@@ -1,0 +1,6 @@
+n = int(input().strip())
+english_subscribers = set(map(int, input().split()))
+m = int(input().strip())
+french_subscribers = set(map(int, input().split()))
+either_but_not_both = english_subscribers.symmetric_difference(french_subscribers)
+print(len(either_but_not_both))
