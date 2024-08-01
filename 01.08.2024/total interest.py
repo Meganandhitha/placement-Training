@@ -1,0 +1,9 @@
+prin = float(input('Enter principal amount: '))
+rate = float(input('Enter the interest rate: '))
+time = float(input('Enter time (in years): '))
+num = float(input('Enter the number of times that interest is compounded per year: '))
+rate = rate/100
+amnt = prin * pow( 1+(rate/num), num*time)
+ci = amnt - prin
+print('Compound interest = %.2f' %ci)
+print('Total amount = %.2f' %amnt)
